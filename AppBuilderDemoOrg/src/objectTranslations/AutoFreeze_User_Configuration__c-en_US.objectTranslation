@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <value>AutoFreeze User Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>AutoFreeze User Configuration</value>
+    </caseValues>
+    <fields>
+        <label><!-- Disable User Trigger? --></label>
+        <name>Disable_User_Trigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify this value in terms of number of days / weeks / months. e.g. - 15d (after 15 days), or 3w (after  3 weeks), or 2m (after 2 months). Default value is 1 month. --></help>
+        <label><!-- User not Logged in Since Last --></label>
+        <name>User_not_Logged_in_Since_Last__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

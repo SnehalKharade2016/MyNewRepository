@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AdminNotificationEmaiSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AdminNotificationEmaiSubject</shortDescription>
+        <value>List of frozen User Accounts.</value>
+    </labels>
+    <labels>
+        <fullName>ReminderEmailSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ReminderEmailSubject</shortDescription>
+        <value>Reminder : Login to salesforce to avoid account freeze</value>
+    </labels>
+    <labels>
+        <fullName>UserNotificationEmailSubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserNotificationEmailSubject</shortDescription>
+        <value>Your account has been frozen.</value>
+    </labels>
+</CustomLabels>

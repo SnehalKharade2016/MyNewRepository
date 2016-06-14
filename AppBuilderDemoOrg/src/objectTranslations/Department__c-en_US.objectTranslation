@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <value>Department</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Departments</value>
+    </caseValues>
+    <fields>
+        <label><!-- LTA to Email --></label>
+        <name>LTA_to_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- LTA to --></label>
+        <name>LTA_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Long Text Area To Picklist --></label>
+        <name>Test_Long_Text_Area__c</name>
+        <picklistValues>
+            <masterLabel>Picklist</masterLabel>
+            <translation><!-- Picklist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>email</masterLabel>
+            <translation><!-- email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>text</masterLabel>
+            <translation><!-- text --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Department Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

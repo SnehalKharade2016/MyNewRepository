@@ -1,0 +1,32 @@
+<apex:page controller="WrapperController">
+
+<!-- 	<script> -->
+<!-- 		function viewContacts() { -->
+<!-- 			alert('Inside JS'); -->
+<!-- 			viewContactSection(); -->
+<!-- 			alert('AFTER JS'); --> 
+<!-- 		} -->
+<!-- 	</script> -->
+	<apex:form >
+		<apex:pageBlock >
+			<apex:pageBlockSection title="account Section">
+				<apex:inputField value="{!wrapObj.accObj.SLASerialNumber__c}" onkeypress="viewContactSection();"/>
+			</apex:pageBlockSection>
+			<apex:pageBlockSection title="Contact Section" rendered="{!wrapObj.isContactSectionVisible}" id="cotactSectionId">
+				<apex:inputField value="{!wrapObj.conObj.Languages__c}" onkeypress="viewOppSection()"/>
+			</apex:pageBlockSection>
+			<apex:pageBlockSection title="Opportunity Section" rendered="{!wrapObj.isOppSectionVisible}">
+				<apex:inputField value="{!wrapObj.oppObj.OrderNumber__c}" onkeypress="viewSubmitSection()"/>
+			</apex:pageBlockSection>
+			<apex:pageBlockSection title="Submit Section" rendered="{!wrapObj.isSubmitVisible}">
+				<apex:outputText value="{!wrapObj.accObj.SLASerialNumber__c}"/>
+				<apex:outputText value="{!wrapObj.conObj.Languages__c}"/>
+				<apex:outputText value="{!wrapObj.oppObj.OrderNumber__c}"/>
+			</apex:pageBlockSection>
+		</apex:pageBlock>
+		<apex:commandButton action="{!submitRecords}" value="Submit" rendered="{!wrapObj.isContactSectionVisible && wrapObj.isOppSectionVisible && wrapObj.isSubmitVisible}"/>
+		<apex:actionFunction action="{!renderContactSection}" name="viewContactSection"/>
+		<apex:actionFunction action="{!renderOpportunitySection}" name="viewOppSection"/>
+		<apex:actionFunction action="{!renderSubmitSection}" name="viewSubmitSection"/>
+	</apex:form>
+</apex:page>
